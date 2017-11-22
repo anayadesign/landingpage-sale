@@ -1,0 +1,14 @@
+mixin cmsArtSubject(galleryId)
+  art:categorySubject(id="")
+    .saleImg
+      img(src="image")
+    .saleInfo
+      p.saleInfo-amount xx% Off
+      p.saleInfo-title Name
+      a.saleInfo-cta(href="#") shop the sale 
+
+mixin gridModule(gallery)
+  picture
+    source(srcset=imgLocation+title+'.jpg' media="(min-width: 600px)")
+    source(srcset=imgLocation+'mobile/'+title+'_1x.jpg 1x, '+imgLocation+'mobile/'+title+'_2x.jpg 2x' media="(min-width: 0px)")
+    img(src=imgLocation+title+'.jpg' alt=altTag)

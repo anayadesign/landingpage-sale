@@ -1,0 +1,70 @@
+//$color-black: #393333;
+$color-black: #444444;
+$color-background: #f6f3ee;
+$color-grey: #676666;
+$color-offwhite: #efefef;
+$color-white: #ffffff;
+$color-gold-dark: #c9955f;
+$color-gold-light: #d7b375;
+
+$font-stack-text: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
+$font-stack-brand: BebasFamily, 'Bebas Neue', BebasNeue, Bebas, $font-stack-text;
+//$font-stack-brand: 'Bebas Neue', BebasNeue, Bebas, $font-stack-text;
+$rem: 16px;
+$gutter: 12px;
+$flex-gutter: 10px;
+
+$breakpoint: 768px;
+$breakpoint-max: 1200px;
+
+@mixin calcFlexGutter($percent) {
+  width: calc(#{$percent} - #{$flex-gutter/2});
+}
+@mixin flex-treatment {
+  //width: 100%;
+  //min-height:375px;
+  margin: 0 0 $flex-gutter;
+}
+@mixin heading-treatment {
+  font-family: $font-stack-brand;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0
+  }
+  100% {
+    background-position: 800px 0
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0
+  }
+  100% {
+    background-position: 800px 0
+  }
+}
+.animated-background {
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    -webkit-animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #eeeeee), color-stop(50%, #dddddd), color-stop(75%, #eeeeee));
+    background: -webkit-linear-gradient(to right,#eee 0,#ddd 50%,#eee 75%);
+    background: linear-gradient(to right,#eee 0,#ddd 50%,#eee 75%);
+    background-size: 800px 104px;
+    -webkit-background-size: 800px 104px;
+    position: relative;
+	}

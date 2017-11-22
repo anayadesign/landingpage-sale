@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    include partials/head.pug
+  body#mainBody
+    #global-container
+      #global-center
+        #main
+          #tpl-row
+            .tpl-cbs
+              .tpl-cb
+                include partials/content.pug
+    script(src="https://code.jquery.com/jquery-1.11.0.min.js"
+    integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
+    crossorigin="anonymous")
+    script(src="scripts/index.js")

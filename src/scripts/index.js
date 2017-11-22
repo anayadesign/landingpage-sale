@@ -19,13 +19,13 @@ var saleList = [{
   "saleType": "dollar",
   "saleAmount": "$X.23"
 },
-// {
-//   "name": "Popular framed art",
-//   "galleryId": "711808",
-//   "galleryLink": "/gallery/id--b711808/most-popular-framed-collections-posters.htm ",
-//   "saleType": "percentage",
-//   "saleAmount": "XX% Off"
-// },
+{
+  "name": "Popular framed art",
+  "galleryId": "711808",
+  "galleryLink": "/gallery/id--b711808/most-popular-framed-collections-posters.htm ",
+  "saleType": "percentage",
+  "saleAmount": "XX% Off"
+},
 {
   "name": "Canvas art",
   "galleryId": "266767",
